@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <header class="page-header">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="75" height="22" alt="Приложение Пинк">
-      <button type="button" class="page-header__menu-btn">
-        <img class="page-header__menu-btn-image" src="img/menu-button.svg" alt="Кнопка меню">
-      </button>
+    <header>
+      <section class="page-header">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Пинк">
+        <button type="button" class="page-header__menu-btn">
+          <img class="page-header__menu-btn-image" src="img/icon-menu-burger.svg" alt="Кнопка меню">
+        </button>
+      </section>
       <nav class="main-nav">
         <ul class="main-nav__sitelist">
           <li class="main-nav__item">Главная</li>
-          <li class="main-nav__item">Фотографии</li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
           <li class="main-nav__item">Конкурс</li>
           <li class="main-nav__item">HTML Academy</li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="page-header__image">
-        <img src="img/header-image.jpg" alt="Наше приложение сделает ваш мир ярче">
+      <section class="main-image">
+        <img src="img/iphone-hand-mobile@1x.png" alt="Наше приложение сделает ваш мир ярче" width="258" height="286">
       </section>
       <section class="download">
         <h1 class="visually-hidden">Скачать наше приложение</h1>
@@ -29,32 +32,32 @@
         <ul class="download-image">
           <li class="download-image__item">
             <a href="https://www.apple.com/ru/ios/app-store/">
-              <img src="img/download-apple.svg" alt="Скачать наше приложение в АпСтор, если у вас АйФон">
+              <img src="img/logo-apple.svg" alt="Скачать наше приложение в АпСтор, если у вас АйФон">
             </a>
           </li>
           <li class="download-image__item">
             <a href="https://play.google.com/store">
-              <img src="img/download-android.svg" alt="Скачать наше приложение в Плэй Маркет, если у вас смартфон на Андроиде">
+              <img src="img/logo-android.svg" alt="Скачать наше приложение в Плэй Маркет, если у вас смартфон на Андроиде">
             </a>
           </li>
           <li class="download-image__item">
             <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
-              <img src="img/download-windows.svg" alt="Скачать наше приложение в Виндовс Стор, если у вас смартфон на Виндовс">
+              <img src="img/logo-microsoft.svg" alt="Скачать наше приложение в Виндовс Стор, если у вас смартфон на Виндовс">
             </a>
           </li>
         </ul>
-        <span class="download__info">Доступно для IPhone, OS X, Windows 8</span>
+        <span class="download__info">Доступно для IPhone, Ipad, Android, Windows Phone, OS X, Windows 8</span>
       </section>
       <section class="intro intro_large">
         <span class="intro__text">Устали от серости мегаполиса?</span>
-        <span class="intro__text">Нам есть, что вам предложить!</span> 
+        <span class="intro__text">Нам есть, что вам предложить!</span>
       </section>
       <h1 class="visually-hidden">Преимущества нашего приложения</h1>
       <section class="advantages">
         <ul class="advantages__list">
           <li class="advantages__item">
             <h2 class="advantages__title">Поднимает настроение</h2>
-            <span class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</span> 
+            <span class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</span>
           </li>
           <li class="advantages___item">
             <h2 class="advantages__title">Меняет мир вокруг</h2>
@@ -62,12 +65,12 @@
           </li>
           <li class="advantages__item">
             <h2 class="advantages__title">Меняет мир вокруг</h2>
-            <span class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</span> 
-          </li> 
+            <span class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</span>
+          </li>
         </ul>
       </section>
       <section class="app-preview">
-        <img class="app-preview__image" src="img/app-preview.jpg" alt="Вот так выглядит мир через наше приложение">
+        <img class="app-preview__image" src="img/iphone-screen-mobile@1x.png" alt="Вот так выглядит мир через наше приложение">
       </section>
       <h1 class="visually-hidden">Отзывы о нас</h1>
       <section class="review">
@@ -91,13 +94,14 @@
           <li class="price__item ">
             <h2 class="price__tariff"></h2>
             <ul class="price__options">
-              <li class="price__options-item ">Розовый фильтр</li>
-              <li class="price__options-item ">Смайлики</li>
-              <li class="price__options-item ">Комментарии</li>
+              <li class="price__options-item "></li>
+              <li class="price__options-item "></li>
+              <li class="price__options-item "></li>
             </ul>
           </li>
-          <li class="price__item price__item_hit">
-            <h2 class="price__tariff">Стандарт 3,99 USD</h2>
+          <li class="price__item">
+            <h2 class="price__tariff price__tariff_hit">Стандарт </h2>
+            <span class="price__money">3,99 USD</span>
             <ul class="price__options">
                 <li class="price__options-item price__options-item_yes">Розовый фильтр</li>
                 <li class="price__options-item price__options-item_yes">Смайлики</li>
@@ -106,9 +110,9 @@
           <li class="price__item">
             <h2 class="price__tariff"></h2>
             <ul class="price__options">
-              <li class="price__options-item ">Розовый фильтр</li>
-              <li class="price__options-item ">Смайлики</li>
-              <li class="price__options-item ">Комментарии</li>
+              <li class="price__options-item "></li>
+              <li class="price__options-item "></li>
+              <li class="price__options-item "></li>
             </ul>
           </li>
           </li>
@@ -139,6 +143,6 @@
           <iframe src="https://yandex.ru/map-widget/v1/-/CBBn7XFYTB" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
         </div>
       </section>
-    </footer>    
+    </footer>
   </body>
 </html>
