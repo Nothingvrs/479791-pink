@@ -1,0 +1,67 @@
+.main-image {
+  background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 23%;
+  background-repeat: no-repeat;
+  min-height: 175px;
+}
+
+.main-image_index {
+  min-height: 450px;
+  margin-bottom: 40px;
+  background-position: 50% 0%;
+}
+
+.main-image__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-image__text {
+  margin: 0;
+  padding-top: 35px;
+  font-family: @font;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 30px;
+  color: @text-color-second;
+  text-align: center;
+}
+
+@media (min-width: @tablet) {
+  .main-image {
+    min-height: 335px;
+    margin-bottom: 92px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 28%;
+    background-repeat: no-repeat;
+  }
+
+  .main-image_index {
+    min-height: 450px;
+    margin-bottom: 40px;
+    background-position: 50% 0%;
+  }
+
+  .main-image__text {
+    padding-top: 35px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  
+  .main-image__wrapper {
+    width: 490px;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-image {
+    min-height: 395px;
+    margin-top: 0;
+    background-image: none;
+    background-color: transparent;
+  }
+}

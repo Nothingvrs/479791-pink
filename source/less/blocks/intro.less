@@ -1,0 +1,42 @@
+.intro__large {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: lighting;
+  font-size: 24px;
+  color: #283645; 
+}
+
+.intro__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645; 
+  pading: 20px 0px;
+  text-align: center;
+}
+
+.intro {
+  display: flex;
+  min-height: 180px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 55px 12px;
+}
+
+@media (min-width: @tablet) {
+  .intro {
+    min-height: 255px;
+  }
+
+  .intro__text {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+}
+
+
+@media (min-width: @desktop) {
+  intro {
+    min-height: 225px;
+  }
+}

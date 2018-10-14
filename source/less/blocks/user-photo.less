@@ -1,0 +1,95 @@
+.user-photo__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-post__wrapper {
+  padding: 0 20px;
+}
+
+.user-photo__user-name {
+  font-family: @font;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.user-photo__upload-time {
+  font-family: @font;
+  font-weight: light;
+  font-size: 12px;
+  line-height: 24px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.user-photo__text {
+  font-family: @font;
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.user-photo__likes {
+  font-family: @font;
+  font-weight: regular;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.user-photo__post {
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.edit-photo {
+  background-color: @bg-color-second;
+}
+
+@media (min-width: @tablet) {
+  .photo-post__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user-photo__post {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .user-photo__post_panorama {
+      width: 100%;
+      margin-bottom: 52px; 
+  }
+
+  .edit-photo {
+   display: flex;
+  }
+}
+
+@media (min-width: @desktop) {
+  .user-photo__post {
+    margin-bottom: 53px;
+
+  }
+
+  .user-photo__post_panorama {
+      margin-bottom: 51px;
+  }
+
+  .edit-photo__preview {
+    height: 400px;
+  }
+
+  .photo-post__wrapper {
+    padding: 0 80px;
+  }
+}
