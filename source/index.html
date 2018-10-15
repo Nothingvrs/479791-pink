@@ -41,12 +41,12 @@
           </nav>
         </div>  
       </section> 
-      <section class="main-image">
-        <div class="main-image__wrapper">
+      <section class="main-image main-image_index">
+        <div class="main-image__wrapper main-image__wrapper_index">
           <h1 class="visually-hidden">Скачать наше приложение</h1>
           <h2 class="main-image__title">Взгляните на жизнь иначе!</h2>
-          <a class="download__button" href="https://www.apple.com/itunes">Скачать приложение</a>
-          <div class="download-image">
+          <a class="main-image__button" href="https://www.apple.com/itunes">Скачать приложение</a>
+          <div class="main-image__download">
             <a href="https://www.apple.com/ru/ios/app-store/">
               <img src="img/logo-apple.svg" alt="Скачать наше приложение в АпСтор, если у вас АйФон">
             </a>
@@ -57,28 +57,28 @@
               <img src="img/logo-microsoft.svg" alt="Скачать наше приложение в Виндовс Стор, если у вас смартфон на Виндовс">
             </a>
           </div>
-          <span class="download__info">Доступно для IPhone, Ipad, Android, Windows Phone, OS X, Windows 8</span>
+          <span class="main-image__download-info">Доступно для IPhone, Ipad, Android, Windows Phone, OS X, Windows 8</span>
         </div>
       </section>
     </header>
-    <main>
+    <main class="index__wrapper">
       <section class="imformation">
-        <div class="intro intro_large">
-          <span class="intro__text">Устали от серости мегаполиса?</span>
-          <span class="intro__text">Нам есть, что вам предложить!</span>
+        <div class="intro intro_index">
+          <span class="intro__text intro__text_large">Устали от серости мегаполиса?</span>
+          <span class="intro__text intro__text_large">Нам есть, что вам предложить!</span>
         </div>
         <h1 class="visually-hidden">Преимущества нашего приложения</h1>
         <div class="advantages">
           <ul class="advantages__list wrapper">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item_mood">
               <h3 class="advantages__title">Поднимает настроение</h3>
               <span class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</span>
             </li>
-            <li class="advantages___item">
+            <li class="advantages__item advantages__item_around-world">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <span class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</span>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item_friends">
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <span class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</span>
             </li>
@@ -91,8 +91,8 @@
       </section>
       <section class="reviews">
         <div class="wrapper">
-          <input class="reviews__toggle visually-hidden  reviews__toggle_1" type="radio" id="slide1" name="reviews__toggle" checked>
-          <input class="reviews__toggle visually-hidden  reviews__toggle_2" type="radio" id="slide2" name="reviews__toggle">
+          <input class="reviews__toggle visually-hidden reviews__toggle_1" type="radio" id="slide1" name="reviews__toggle" checked>
+          <input class="reviews__toggle visually-hidden reviews__toggle_2" type="radio" id="slide2" name="reviews__toggle">
           <input class="reviews__toggle visually-hidden reviews__toggle_3" type="radio" id="slide3" name="reviews__toggle">
           <div class="reviews__controls">
             <label class="reviews__label" for="slide1"></label>
@@ -129,7 +129,7 @@
         <table class="price__list">
           <thead class="price__top">
             <tr class="price__row">
-              <th class="price__header  price__header_mobile"></th>
+              <th class="pricing__header  pricing__header_mobile"></th>
               <th class="price__header  price__header_base">
                 <p class="price__name">База</p>
                 <span class="price__value">1,99 USD</span>
@@ -198,7 +198,7 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__info  wrapper">
+        <div class="contacts__info wrapper">
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
           <ul class="contacts__list">
             <li class="contacts__item  contacts__item_phone">
@@ -209,13 +209,13 @@
               <h3 class="contacts__text">Пишите:</h3>
               <span class="contacts__type">mail@htmlacademy.ru</span>
             </li>
-            <li class="contacts__item  contacts__item_address">
+            <li class="contacts__item  contacts__item_adress">
               <h3 class="contacts__text">Приезжайте в гости:</h3>
               <span class="contacts__type">ул. Большая Конюшенная, 19/8</span>
             </li>
           </ul>
         </div>
-        <div class="map">
+        <div class="contacts__map">
           <iframe src="https://yandex.ru/map-widget/v1/-/CBBWYCun3B" frameborder="1" allowfullscreen="true"></iframe>
         </div>
       </section>
