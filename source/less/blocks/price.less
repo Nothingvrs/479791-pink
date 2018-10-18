@@ -6,6 +6,9 @@
   padding-top: 133px;
   padding-bottom: 47px;
   overflow: hidden;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: 0 -27px;
+  background-repeat: no-repeat;
 }
 
 .price__label {
@@ -87,9 +90,90 @@
   background-color: @bg-color-main;
 }
 
+.price__cell {
+  padding: 14px 21px 14px;
+  border: 2px solid #e5e5e5;
+}
+
+.price__cell_yes {
+    background-image: url("../img/icon-yes.svg");
+    background-position: 230px 18px;
+    background-repeat: no-repeat;
+    background-size: 30px 23px;
+}
+
+.price__cell_no {
+    background-image: url("../img/icon-no.svg");
+    background-position: 231px 15px;
+    background-repeat: no-repeat;
+    background-size: 27px 27px;
+}
+
 .price__cell_mobile {
   display: none;
 }
+
+.price__toggle_1:checked ~ .price__controls [for="price1"] {
+  background-color: @bg-color-main;
+  border: 3px solid @color-second;
+  opacity: 1;
+}
+
+.price__toggle_2:checked ~ .price__controls [for="price2"] {
+  background-color: @bg-color-main;
+  border: 3px solid @color-second;
+  opacity: 1;
+}
+
+.price__toggle_3:checked ~ .price__controls [for="price3"] {
+  background-color: @bg-color-main;
+  border: 3px solid @color-second;
+  opacity: 1;
+}
+
+input[type="radio"]:focus + .price__label {
+  opacity: 0.6;
+  outline: none;
+}
+
+
+.price__toggle_1:checked ~ .price__list {
+  transform: translateX(22px);
+}
+
+.price__toggle_2:checked ~ .price__list {
+  transform: translateX(-254px);
+}
+
+.price__toggle_3:checked ~ .price__list {
+  transform: translateX(-532px);
+}
+
+.price__hit {
+  position: relative;
+}
+
+.price__hit::before {
+  content: url("../img/bg-hit.svg");
+  position: absolute;
+  display: block;
+  top: -16px;
+  left: -3px;
+}
+
+.price__hit::after {
+  content: "хит";
+  position: absolute;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  color: @text-color-second;
+  top: -5px;
+  left: 6px;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+}
+
 
 @media (min-width: @tablet) {
   .price {
@@ -159,12 +243,7 @@
   }
 
   .price__cell_mobile {
-      font-size: 18px;
-      line-height: 30px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
-
-
-
-
-  

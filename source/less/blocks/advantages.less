@@ -15,9 +15,27 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-top: 66px;
+  padding-top: 78px;
   padding-bottom: 287px;
-  text-align: center; 
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.advantages__list::before {
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100vw auto;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  left: ~"calc(-50vw + 50%)";  
 }
 
 .advantages__title {
@@ -26,33 +44,55 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-  margin-top: 16px;
-  margin-bottom: 10px; 
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-.advantage__description {
+.advantages__description {
   font-family: @font;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  margin-top: 12px;
-  margin-bottom: 31px; 
 }
 
+.advantages__item {
+  margin-bottom: 15px;
+}
+
+
 @media (min-width: @tablet) {
+  .advantages {
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: 50% 0%, 0% 0%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% auto, 100% auto;
+  }
+
   .advantages__list {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: 21px 5px;
+    background-position: 21px 6px;
     background-repeat: no-repeat;
-    padding-top: 58px;
-    padding-bottom: 6px;
+    padding-top: 78px;
+    padding-bottom: 0;
     text-align: left;
+  }
+
+  .advantages__list::before {
+    display: none;
   }
   
   .advantages__item {
     width: 315px;
-    margin-bottom: 35px;
+    margin-bottom: 18px;
     margin-left: 309px;  
+  }
+
+  .advantages__item_around-world {
+    margin-bottom: 18px;
+  } 
+
+  .advantages__item_friends {
+    margin-bottom: 30px;
   } 
 
   .advantages__effect {
@@ -65,7 +105,28 @@
     padding-bottom: 67px;
     padding-left: 329px;
     box-sizing: border-box;
-  }  
+    background-color: @bg-color-main;
+  }
+
+  .advantages__effect p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .advantages__title_effect {
+    font-family: @font;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    width: 180px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+
+  .advantages__description {
+    text-align: left;
+  }
+
 }
 
 @media (min-width: @desktop) {

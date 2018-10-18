@@ -1,5 +1,5 @@
 
-.review__title {
+.reviews__author {
   font-family: @font;
   font-weight: 700;
   font-size: 18px;
@@ -8,11 +8,100 @@
   text-align: center;
 }
 
-.review__text {
+.reviews__text {
   font-family: @font;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
   text-align: center;
+}
+
+.reviews .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.reviews__controls {
+  display: flex;
+  justify-content: space-between;
+  width: 62px;
+  order: 3;
+  margin-top: 0;
+}
+
+.reviews__label {
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  background-color: @color-second;
+  opacity: 0.3;
+  border: 3px solid @bg-color-main;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.reviews__label:hover {
+    opacity: 0.6;
+}
+
+.reviews__label:active {
+    opacity: 0.1;
+    outline: none;
+}
+
+input[type="radio"]:focus + .reviews__label {
+  opacity: 0.6;
+  outline: none;
+}
+
+.reviews__toggle_1:checked ~ .reviews__controls [for="slide1"] {
+  background-color: @bg-color-main;
+  border: 3px solid @color-second;
+  opacity: 1;
+}
+
+.reviews__toggle_2:checked ~ .reviews__controls [for="slide2"] {
+  background-color: @bg-color-main;
+  border: 3px solid @color-second;
+  opacity: 1;
+}
+
+.reviews__toggle_3:checked ~ .reviews__controls [for="slide3"] {
+  background-color: @bg-color-main;
+  border: 3px solid @color-second;
+  opacity: 1;
+}
+
+.reviews__toggle_1:checked ~ .reviews__slide_first {
+  display: flex;
+}
+
+.reviews__toggle_2:checked ~ .reviews__slide_second {
+  display: flex;
+}
+
+.reviews__toggle_3:checked ~ .reviews__slide_third {
+  display: flex;
+}
+
+.reviews__slide {
+  display: none;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 223px;
+  margin: 2px 0 19px;
+  text-align: center;
+}
+
+.reviews__info {
+  display: none;
+}
+
+.reviews__arrow {
+  display: none;
 }
