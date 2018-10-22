@@ -16,7 +16,7 @@
 .main-header__head-menu {
   display: flex;
   min-height: 50px;
-  padding: 20px 20px;
+  padding: 22px 10px;
   box-sizing: border-box;
 }
 
@@ -26,8 +26,8 @@
   margin-top: 1px;
 }
 
-.main-header__logo_mobile{
-  margin-left: 5px;
+.main-header__logo-image_mobile{
+  margin-left: 9px;
 }
 
 .main-header__logo-image_desktop {
@@ -62,39 +62,25 @@
   display: block;
 }
 
-
-
 @media (min-width: @tablet) {
+  .main-header__menu {
+    margin-bottom: -160px;
+  }
+
   .main-header__head-menu {
-    min-height: 110px;
     box-sizing: border-box;
+    padding: 22px 9px;
+    min-height: 110px;
   }
 
   .main-header__logo-image_tablet {
     display: block;
-    margin-top: 6px;
+    margin-top: 4px;
+    margin-left: 10.5px;
   }
 
   .main-header__logo-image_mobile {
     display: none;
-  }
-}
-
-@media (max-width: 959px) {
-  .main-nav_closed .main-nav__item {
-    display: none;
-  }
-
-  .main-nav_opened .main-nav__item {
-    display: block;
-  }
-
-  .main-nav_nojs .main-nav__menu-btn {
-    display: none;
-  }
-
-  .main-nav_nojs .main-nav__item {
-    display: block;
   }
 }
 

@@ -1,15 +1,15 @@
 .main-image {
   background-color: #1d2631;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 23%;
+  background-position: 0 0%;
   background-repeat: no-repeat;
-  min-height: 170px;
+  min-height: 237px;
 }
 
 .main-image_index {
-  min-height: 175px;
+  min-height: 165px;
   margin-bottom: 40px;
-  background-position: 50% -32%;
+  background-position: 50% 0%;
 }
 
 .main-image__title {
@@ -19,7 +19,7 @@
 
 .main-image__button {
   display: block;
-  padding: 14px 35px;
+  padding: 15px 35px;
   border: 3px solid white;
   border-radius: 50px 50px 50px 50px;
   font-family: @font;
@@ -49,9 +49,9 @@
 
 .main-image__wrapper_index { 
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: 0 110px;
+  background-position: 0 175px;
   background-repeat: no-repeat;
-  padding-top: 424px;
+  padding-top: 490px;
   padding-bottom: 30px;
   text-align: center; 
 }
@@ -73,13 +73,15 @@
   font-family: @font;
   font-weight: 200;
   font-size: 24px;
-  padding-top: 29px;
+  padding-top: 95px;
+  color: @bg-color-main;
 }
 
 @media (min-width: @tablet) {
   .main-image {
-    min-height: 328px;
-    margin-bottom: 92px;
+    min-height: 445px;
+    margin-top: 45px;
+    margin-bottom: 58px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 28%;
     background-repeat: no-repeat;
@@ -89,8 +91,8 @@
     display: block;
     width: 200px;
     margin-bottom: 30px;
-    padding-top: 93px;
-    padding-left: 50px;
+    padding-top: 207px;
+    padding-left: 51px;
     font-weight: 200;
     font-size: 40px;
     line-height: 48px;
@@ -100,12 +102,12 @@
 
   .main-image_index {
     display: flex;
-    min-height: 620px;
+    min-height: 734px;
     margin-bottom: 45px;
   }
 
   .main-image__text {
-    padding-top: 70px;
+    padding-top: 185px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -127,12 +129,13 @@
   }
 
   .main-image__button {
-  padding: 15px 45px;
+  padding: 16px 43px;
   }
 
   .main-image__download-info {
     font-size: 18px;
     padding: 0;
+    padding-left: 3px;
   }
 
   .main-image__download {
@@ -143,7 +146,7 @@
 
 @media (min-width: @desktop) {
   .main-image {
-    min-height: 285px;
+    min-height: 445px;
     margin-top: 0;
     margin-bottom: 0;
     background-image: none;
@@ -151,7 +154,7 @@
   }
 
   .main-image__text {
-    padding-top: 65px;
+    padding-top: 225px;
   }
 
   .main-image__wrapper {
@@ -161,8 +164,7 @@
   }
 
   .main-image_index {
-    min-height: 745px;
-    margin-bottom: 68px;  
+    min-height: 810px;  
   }
 
   .main-image__button {
@@ -175,7 +177,8 @@
 
   .main-image__wrapper_index {
     width: 940px;
-    min-height: 745px;
+    min-height: 795px;
+    margin-top: 110px;
     padding-left: 0;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 16px 100%;
@@ -195,12 +198,13 @@
     line-height: 60px;
     font-weight: 200;
     padding-left: 0;
-    padding-top: 110px;
+    padding-top: 160px;
     width: 300px;
     margin-bottom: 52px;
   }
 
   .main-image__download-info {
     width: 300px;
+    padding: 0;
   }
 }

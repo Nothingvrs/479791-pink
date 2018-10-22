@@ -190,15 +190,15 @@ input[type="radio"]:focus + .price__label {
  .price__list {
     width: 620px;
     margin: 0px;
-    margin-left: 22px;
-    margin-top: 6px;
+    margin-left: 21px;
+    margin-top: 5px;
     text-transform: none;
     empty-cells: hide;
   }
 
   .price__header {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 6px;
+    padding-bottom: 5px;
   }
 
   .price__top {
@@ -212,7 +212,7 @@ input[type="radio"]:focus + .price__label {
     line-height: 30px;
     text-transform: uppercase;
     margin-top: 6px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .price__value {
@@ -220,7 +220,6 @@ input[type="radio"]:focus + .price__label {
     font-weight: 200;
     font-size: 18px;
     line-height: 30px;
-    margin: 0;
   }
 
   .price__cell {
@@ -278,15 +277,23 @@ input[type="radio"]:focus + .price__label {
 
 @media (min-width: @desktop) {
   .price {
-    padding-top: 142px;
+    margin: 0 auto;
+    padding-top: 141px;
     padding-bottom: 95px;
     background-position: 0% 0%;
     background-size: 100vw auto;
     margin-bottom: 30px;
   }
 
+  .price__wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+
   .price__list {
     width: 940px;
+    margin: 0;
+    margin-top: 4px;
   }
 
   .price__top {

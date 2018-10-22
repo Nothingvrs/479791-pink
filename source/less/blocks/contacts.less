@@ -98,13 +98,12 @@
     font-size: 40px;
     line-height: 48px;
     margin: 0 auto;
-    margin-bottom: 24px;
   }
 
   .contacts__list {
     padding-bottom: 0;
     margin-bottom: 10px;
-    margin-top: 45px;
+    margin-top: 43px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -127,9 +126,18 @@
     margin-left: 20px;
   }
 
+  .contacts__item_email .contacts__type {
+    margin-top: 5px;
+  }
+
+  .contacts__item_adress .contacts__type {
+    margin-top: 1px;
+  }
+
   .contacts__type {
     font-size: 24px;
     line-height: 30px;
+    margin-top: 3px;
   }
 
   .contacts__map {
@@ -152,13 +160,13 @@
   .contacts__title {
     width: 500px;
     margin-top: 63px;
-    margin-bottom: 30px;
     font-size: 50px;
     line-height: 60px;
   }
 
   .contacts__list {
     margin-bottom: 0px;
+    margin-top: 45px;
   }
 
   .contacts__item {
@@ -176,6 +184,11 @@
 
   .contacts__item_adress .contacts__type {
     margin-top: 19px;
+    margin-left: 0;
+  }
+
+  .contacts__item_email .contacts__type {
+    margin-top: 26px;
     margin-left: 0;
   }
 
@@ -197,6 +210,15 @@
   .contacts__map::after {
       top: 281px;
       left: 48.4%;
+  }
+
+  .contacts__map::before {
+    background-position: 50% 0;
+    background-size: 100% auto;
+    left: ~"calc(-50vw + 50%)";
+    z-index: 10;
+    width: 100%;
+    height: 100%;     
   }
 
   .contacts__info {

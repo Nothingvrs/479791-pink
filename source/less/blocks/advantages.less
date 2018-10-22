@@ -2,6 +2,7 @@
   background-color: @bg-color-second;
   margin-bottom: 40px;
   overflow: hidden;
+  margin-top: 8px;
 }
 
 .advantages__effect {
@@ -10,7 +11,7 @@
 
 .advantages__list {
   background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-position: 50% 109%;
+  background-position: 50% 110%;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
@@ -45,14 +46,14 @@
   font-weight: 700;
   color: #000000;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .advantages__description {
   font-family: @font;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .advantages__item {
@@ -66,14 +67,15 @@
     background-position: 50% 0%, 0% 0%;
     background-repeat: no-repeat, no-repeat;
     background-size: 100% auto, 100% auto;
-    margin-bottom: 25px;
+    margin-bottom: 34px;
+    margin-top: 0;
   }
 
   .advantages__list {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: 21px 6px;
+    background-position: 22px 4px;
     background-repeat: no-repeat;
-    padding-top: 78px;
+    padding-top: 74px;
     padding-bottom: 0;
     text-align: left;
   }
@@ -81,19 +83,29 @@
   .advantages__list::before {
     display: none;
   }
+
+  .advantages__title {
+    margin-bottom: 10px;
+  }
   
   .advantages__item {
     width: 315px;
-    margin-bottom: 17px;
+    margin-bottom: 19px;
     margin-left: 310px;  
   }
 
+  .advantages__item_mood{
+    margin-left: 310px;
+  }
+
   .advantages__item_around-world {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    margin-left: 310px;
   } 
 
   .advantages__item_friends {
     margin-bottom: 30px;
+    margin-left: 312px;
   } 
 
   .advantages__effect {
@@ -104,14 +116,13 @@
     padding-top: 80px;
     padding-right: 30px;
     padding-bottom: 67px;
-    padding-left: 329px;
+    padding-left: 330px;
     box-sizing: border-box;
     background-color: @bg-color-main;
   }
 
   .advantages__effect p {
     margin: 0;
-    margin-bottom: 10px;
   }
 
   .advantages__title_effect {
@@ -129,10 +140,32 @@
     line-height: 26px;
   }
 
+  .advantages__effect::before {
+    content: "24";
+    position: absolute;
+    width: 238px;
+    height: 276px;
+    top: 59px;
+    left: 20px;
+    padding-top: 57px;
+    text-align: center;
+    font-family: @font;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 187px;
+    color: @color-main;
+    box-sizing: border-box;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-position: 50% 75%, 50% 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 202px auto, 238px auto;
+  }
+
 }
 
 @media (min-width: @desktop) {
   .advantages {
+    margin-top: 31px;
     margin-bottom: 0;
     background-image: url("../img/bg-triangle-white.svg"), linear-gradient(to bottom, @bg-color-main 48px, @bg-color-second 48px);
     background-position: 0 48px, 0 0;
@@ -191,7 +224,7 @@
     margin-top: 42px;
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 
   .advantages__description {
@@ -208,8 +241,20 @@
     background-color: @bg-color-second;
   }
 
+  .advantages__effect::before {
+    width: 300px;
+    height: 350px;
+    top: 32px;
+    left: 0;
+    padding-top: 98px;
+    font-size: 120px;
+    line-height: 187px;
+    background-size: 254px auto, 300px auto;
+  }
+
   .advantages__title_effect {
     width: 300px;
+    margin-bottom: 25px;
   }
 
   .advantages__effect .advantages__description {

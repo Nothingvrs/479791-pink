@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="main-header">
-      <section class="main-header__menu">
+      <section class="main-header__menu main-header__menu_opened main-header__menu_nojs">
         <div class="main-header__wrapper"> 
           <h1 class="visually-hidden">Приложение Пинк</h1>
           <div class="main-header__head-menu">  
@@ -20,10 +20,11 @@
               <img class="main-header__logo-image main-header__logo-image_desktop" src="img/logo-pink-white-desktop.svg"  alt="Приложение Пинк">
             </a>
             <button type="button" class="main-nav__menu-btn">
-                <img class="main-header__menu-btn-image" src="img/icon-menu-cross.svg" alt="Кнопка меню">
+                <img class="main-header__menu-btn_opened" src="img/icon-menu-cross.svg" alt="Кнопка меню">
+                <img class="main-header__menu-btn_closed" src="img/icon-menu-burger.svg" alt="Кнопка меню">
             </button>
           </div>  
-          <nav class="main-nav">
+          <nav class="main-nav main-nav_opened main-nav_nojs">
             <ul class="main-nav__sitelist">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -39,12 +40,12 @@
               </li>
             </ul>
           </nav>
-        </div>   
-        <section class="main-image">
+        </div>  
+      </section> 
+      <section class="main-image">
           <div class="main-image__wrapper">
             <h2 class="main-image__text"> Конкурс на самое безбашенное путешествие с Пинк</h2> 
           </div>
-        </section>
       </section>
     </header>
     <main>
@@ -73,10 +74,10 @@
           </div>
         </section>
         <section class="competition-form__item competition-form__item_checkbox">
-          <div class="wrapper">
+          <div class="wrapper wrapper_form-desktop">
             <fieldset class="competition-form__fieldset-checkbox">
             <legend class="competition-form__title competition-form__title_checkbox">Ваши безбашенные достижения в путешествии</legend>
-              <div class="competition-form__field competition-form__field_checkbox">    
+              <div class="competition-form__field competition-form__field_checkbox"   
                 <input name="acool" class="visually-hidden" type="checkbox" checked id="progress-acool">
                 <label class="competition-form__checkbox" for="progress-acool">Сделал селфи с акулой</label>
               </div>
@@ -103,17 +104,20 @@
             </fieldset>
         </section>
         <section class="competition-form__item competition-form__item_contacts">  
-          <div class="wrapper">
+          <div class="wrapper wrapper_form-desktop">
             <fieldset class="competition-form__fieldset-contacts">
             <legend class="competition-form__title competition-form__title_hidden">Контактная информация</legend>
-              <div class="competition-form__field competition-form__field_contacts">
-                <label for="phone" class="competition-form__title competition-form__title_contacts ">Номер телефона</label>
-                <input type="tel" name="phone" class="competition-form__text-field competition-form__text-field_phone" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="competition-form__field competition-form__field_contacts">
-                <label for="mail" class="competition-form__title competition-form__title_contacts">Адрес почты</label>
-                <input type="email" name="mail" class="competition-form__text-field competition-form__text-field_mail" placeholder="Введите почту*">
-              </div>
+              <div class="competition-form__contacts-group">
+                <div class="competition-form__field competition-form__field_contacts">
+                  <label for="phone" class="competition-form__title competition-form__title_contacts ">Номер телефона</label>
+                  <input type="tel" name="phone" class="competition-form__text-field competition-form__text-field_phone" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="competition-form__field competition-form__field_contacts">
+                  <label for="mail" class="competition-form__title competition-form__title_contacts">Адрес почты</label>
+                  <input type="email" name="mail" class="competition-form__text-field competition-form__text-field_mail" placeholder="Введите почту*">
+                </div> 
+              </div> 
+            </fieldset>
           </div>
         </section>
         <section class="competition-form__item_app">
@@ -140,12 +144,12 @@
         </section>
         <div class="competition-form__info_container wrapper">
           <button class="competition-form__btn" type="submit">Отправить форму</button>
-            <span class="competition-form__info competition-form__info_red">*</span>
+            <span class="competition-form__info competition-form__info_red">*&nbsp;</span>
             <span class="competition-form__info">— обязательные <span class="competition-form__info competition-form__info_desktop"> для заполнения</span> поля</span>
         </div>
       </form>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer main-footer_index">
       <a class="main-footer__logo" href="index.html">
         <img class="main-footer__icon main-footer__icon_mobile" src="img/logo-pink-blue-mobile.svg" alt="Приложение Пинк">
         <img class="main-footer__icon main-footer__icon_desktop" src="img/logo-pink-blue-desktop.svg" alt="Приложение Пинк">
@@ -164,7 +168,7 @@
           <span class="visually-hidden">YouTube</span> 
           <img class="main-footer__youtube" src="img/icon-youtube.svg">
         </a>      
-      </div>
+      </ul>
       <div class="main-footer__produced">
         <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="main-footer__text">Разработано</span>
@@ -172,5 +176,6 @@
           <img class="main-footer__academy-logo" src="img/logo-htmlacademy.svg" alt="Сайт разработчика - ХТМЛ Академии">
         </a>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

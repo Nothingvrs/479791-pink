@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="main-header">
-      <section class="main-header__menu main-header__menu_opened">
+      <section class="main-header__menu main-header__menu_opened main-header__menu_nojs">
         <div class="main-header__wrapper"> 
           <h1 class="visually-hidden">Приложение Пинк</h1>
           <div class="main-header__head-menu">  
@@ -66,7 +66,7 @@
       <section class="imformation">
         <div class="intro intro_index">
           <span class="intro__text intro__text_large">Устали от серости мегаполиса?</span>
-          <span class="intro__text intro__text_large">Нам есть, что вам<br>предложить!</span>
+          <span class="intro__text intro__text_large intro__text_desktop">Нам есть, что вам<br>предложить!</span>
         </div>
         <h1 class="visually-hidden">Преимущества нашего приложения</h1>
         <div class="advantages">
@@ -124,78 +124,80 @@
         </div>
       </section>
       <section class="price">
-        <input class="price__toggle  price__toggle_1  visually-hidden" type="radio" id="price1" name="price-toggle">
-        <input class="price__toggle  price__toggle_2  visually-hidden" type="radio" id="price2" name="price-toggle" checked>
-        <input class="price__toggle  price__toggle_3  visually-hidden" type="radio" id="price3" name="price-toggle">
-        <table class="price__list">
-          <thead class="price__top">
-            <tr class="price__row">
-              <th class="price__header  price__header_mobile"></th>
-              <th class="price__header  price__header_base">
-                <p class="price__name">База</p>
-                <span class="price__value">1,99 USD</span>
-              </th>
-              <th class="price__header  price__header_standart">
-                <div class="price__hit">
-                  <p class="price__name">Стандарт</p>
-                  <span class="price__value">3,99 USD</span>
-                </div>
-              </th>
-              <th class="price__header  price__header_unlim">
-                <p class="price__name">Анлим</p>
-                <span class="price__value">9,99 USD</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody class="price__bottom">
-            <tr class="price__row">
-              <td class="price__cell  price__cell_mobile">
-                <span class="price__content">Розовый фильтр</span>
-              </td>
-              <td class="price__cell  price__cell_yes">
-                <span class="price__content">Розовый фильтр</span>
-              </td>
-              <td class="price__cell  price__cell_yes">
-                <span class="price__content">Розовый фильтр</span>
-              </td>
-              <td class="price__cell  price__cell_yes">
-                <span class="price__content">Розовый фильтр</span>
-              </td>
-            </tr>
-            <tr class="price__row">
-              <td class="price__cell  price__cell_mobile">
-                <span class="price__content">Смайлики</span>
-              </td>
-              <td class="price__cell  price__cell_no">
-                <span class="price__content">Смайлики</span>
-              </td>
-              <td class="price__cell  price__cell_yes">
-                <span class="price__content">Смайлики</span>
-              </td>
-              <td class="price__cell  price__cell_yes">
-                <span class="price__content">Смайлики</span>
-              </td>
-            </tr>
-            <tr class="price__row">
-              <td class="price__cell  price__cell_mobile">
-                <span class="price__content">Комментарии</span>
-              </td>
-              <td class="price__cell  price__cell_no">
-                <span class="price__content">Комментарии</span>
-              </td>
-              <td class="price__cell  price__cell_no">
-                <span class="price__content">Комментарии</span>
-              </td>
-              <td class="price__cell  price__cell_yes">
-                <span class="price__content">Комментарии</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="price__controls">
-          <label class="price__label" for="price1"></label>
-          <label class="price__label" for="price2"></label>
-          <label class="price__label" for="price3"></label>
+        <div class="price__wrapper">
+          <input class="price__toggle  price__toggle_1  visually-hidden" type="radio" id="price1" name="price-toggle">
+          <input class="price__toggle  price__toggle_2  visually-hidden" type="radio" id="price2" name="price-toggle" checked>
+          <input class="price__toggle  price__toggle_3  visually-hidden" type="radio" id="price3" name="price-toggle">
+          <table class="price__list">
+            <thead class="price__top">
+              <tr class="price__row">
+                <th class="price__header  price__header_mobile"></th>
+                <th class="price__header  price__header_base">
+                  <p class="price__name">База</p>
+                  <span class="price__value">1,99 USD</span>
+                </th>
+                <th class="price__header  price__header_standart">
+                  <div class="price__hit">
+                    <p class="price__name">Стандарт</p>
+                    <span class="price__value">3,99 USD</span>
+                  </div>
+                </th>
+                <th class="price__header  price__header_unlim">
+                  <p class="price__name">Анлим</p>
+                  <span class="price__value">9,99 USD</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="price__bottom">
+              <tr class="price__row">
+                <td class="price__cell  price__cell_mobile">
+                  <span class="price__content">Розовый фильтр</span>
+                </td>
+                <td class="price__cell  price__cell_yes">
+                  <span class="price__content">Розовый фильтр</span>
+                </td>
+                <td class="price__cell  price__cell_yes">
+                  <span class="price__content">Розовый фильтр</span>
+                </td>
+                <td class="price__cell  price__cell_yes">
+                  <span class="price__content">Розовый фильтр</span>
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell  price__cell_mobile">
+                  <span class="price__content">Смайлики</span>
+                </td>
+                <td class="price__cell  price__cell_no">
+                  <span class="price__content">Смайлики</span>
+                </td>
+                <td class="price__cell  price__cell_yes">
+                  <span class="price__content">Смайлики</span>
+                </td>
+                <td class="price__cell  price__cell_yes">
+                  <span class="price__content">Смайлики</span>
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell  price__cell_mobile">
+                  <span class="price__content">Комментарии</span>
+                </td>
+                <td class="price__cell  price__cell_no">
+                  <span class="price__content">Комментарии</span>
+                </td>
+                <td class="price__cell  price__cell_no">
+                  <span class="price__content">Комментарии</span>
+                </td>
+                <td class="price__cell  price__cell_yes">
+                  <span class="price__content">Комментарии</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="price__controls">
+            <label class="price__label" for="price1"></label>
+            <label class="price__label" for="price2"></label>
+            <label class="price__label" for="price3"></label>
+          </div>
         </div>
       </section>
       <section class="contacts">
@@ -216,8 +218,8 @@
             </li>
           </ul>
         </div>
-        <div class="contacts__map">
-        </div>
+          <div class="contacts__map">
+          </div>
       </section>
     </main>
     <footer class="main-footer main-footer_index">
