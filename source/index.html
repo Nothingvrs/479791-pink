@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="main-header">
-      <section class="main-header__menu">
+      <section class="main-header__menu main-header__menu_opened">
         <div class="main-header__wrapper"> 
           <h1 class="visually-hidden">Приложение Пинк</h1>
           <div class="main-header__head-menu">  
@@ -20,10 +20,11 @@
               <img class="main-header__logo-image main-header__logo-image_desktop" src="img/logo-pink-white-desktop.svg"  alt="Приложение Пинк">
             </a>
             <button type="button" class="main-nav__menu-btn">
-                <img class="main-header__menu-btn-image" src="img/icon-menu-cross.svg" alt="Кнопка меню">
+                <img class="main-header__menu-btn_opened" src="img/icon-menu-cross.svg" alt="Кнопка меню">
+                <img class="main-header__menu-btn_closed" src="img/icon-menu-burger.svg" alt="Кнопка меню">
             </button>
           </div>  
-          <nav class="main-nav">
+          <nav class="main-nav main-nav_opened main-nav_nojs">
             <ul class="main-nav__sitelist">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -246,5 +247,6 @@
           <img class="main-footer__academy-logo" src="img/logo-htmlacademy.svg" alt="Сайт разработчика - ХТМЛ Академии">
         </a>
     </footer>
+  	<script src="js/menu.js"></script>
   </body>
 </html>
