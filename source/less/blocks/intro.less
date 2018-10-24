@@ -1,29 +1,33 @@
-
 .intro__text {
   font-family: @font;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: @color-second; 
-  pading: 20px 0px;
+  pading: 20px 30px;
   text-align: center;
+}
+
+.intro__text_photo {
+  padding: 0 26px;
+  padding-bottom: 50px;
 }
 
 .intro__text_large {
   font-family: @font;
-  font-weight: lighter;
+  font-weight: 200;
   font-size: 24px;
   color: @color-second;
   width: 100%;
-  margin-bottom: 40px; 
+  margin-bottom: 26px; 
 }
 
 .intro {
   display: flex;
-  min-height: 180px;
+  min-height: 170px;
   box-sizing: border-box;
   text-align: center;
-  padding: 55px 12px;
+  padding-top: 45px;
 }
 
 .intro_index {
@@ -32,32 +36,95 @@
   flex-direction: column;
 }
 
+.intro__tablet {
+  display: none;
+}
+
 @media (min-width: @tablet) {
   .intro {
-    min-height: 255px;
+    min-height: 194px;
+    width: 600px;
+    padding: 0;
+    padding-top: 33px;
+    padding-left: 62px;
+  }
+
+  .intro_photo {
+    min-height: 170px;
+  }
+
+  .intro_index {
+    padding: 0;
+    padding-top: 2px;
+    padding-left: 20px;
+  }
+
+  .intro__tablet {
+    display: block;
+    margin-top: -4px;
   }
 
   .intro__text {
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: 400;
+    text-align: center;
   }
 
   .intro__text_large {
+    width: 620px;
+    font-weight: 200;
     font-size: 40px; 
+    line-height: 49px;
+    margin: 0;
   }
 }
 
 
 @media (min-width: @desktop) {
   .intro {
-    min-height: 225px;
+    min-height: 174px;
+    margin-bottom: 0px;
+    padding-top: 93px;
+    padding-left: 220px;
   }
 
   .intro_index {
-    min-height: 300px;
+    min-height: 210px;
   }
 
-   .intro__text_large {
+  .intro_photo {
+    padding-top: 80px;
+  }
+
+  .intro__text {
+    display: block;
+    width: 750px;
+    min-height: 110px;
+  }
+
+  .intro__text_photo {
+    min-width: 600px;
+    margin-left: 55px;
+    margin-top: 14px;
+    padding-bottom: 36px;
+  }
+
+  .intro__text_large {
     font-size: 50px; 
+    line-height: 60px;
+    width: 800px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    min-height: 60px;
+  }
+
+  .intro__text_desktop {
+    margin: 0;
+    margin-left: 0px;
+  }
+
+  .intro__tablet {
+    margin: 0;
   }
 }

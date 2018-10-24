@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="main-header">
-      <section class="main-header__menu">
+      <section class="main-header__menu main-header__menu_opened main-header__menu_nojs">
         <div class="main-header__wrapper"> 
           <h1 class="visually-hidden">Приложение Пинк</h1>
           <div class="main-header__head-menu">  
@@ -20,10 +20,11 @@
               <img class="main-header__logo-image main-header__logo-image_desktop" src="img/logo-pink-white-desktop.svg"  alt="Приложение Пинк">
             </a>
             <button type="button" class="main-nav__menu-btn">
-                <img class="main-header__menu-btn-image" src="img/icon-menu-cross.svg" alt="Кнопка меню">
+                <img class="main-header__menu-btn_opened" src="img/icon-menu-cross.svg" alt="Кнопка меню">
+                <img class="main-header__menu-btn_closed" src="img/icon-menu-burger.svg" alt="Кнопка меню">
             </button>
           </div>  
-          <nav class="main-nav">
+          <nav class="main-nav main-nav_opened main-nav_nojs">
             <ul class="main-nav__sitelist">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -39,126 +40,180 @@
               </li>
             </ul>
           </nav>
-        </div>   
-        <section class="main-image">
+        </div>  
+      </section> 
+      <section class="main-image">
           <div class="main-image__wrapper">
-            <h2 class="main-image__text"> Фотографии пользователей</h2> 
+            <h2 class="main-image__text main-image__text_photo"> Фотографии пользователей</h2> 
           </div>
-        </section>
       </section>
     </header>
     <main>
-      <section class="intro">
-        <span class="intro__text">
+      <section class="intro intro_photo">
+        <span class="intro__text intro__text_photo">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </span>        
       </section>
       <section class="user-photo">
-        <div class="user-photo__post user-photo__post_panorama">
-          <div class="user-photo__item best-of-day">
-            <img src="img/panorama-mobile@1x.jpg" alt="Фотография пользователя">
-          </div>
-          <div class="user-photo__comment">
-            <h2 class="user-photo__user-name">Анна</h2>
-            <span class="user-photo__upload-time">(5 минут назад)</span>
-            <span class="user-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</span>
-            <span class="user-photo__likes">нравится: 215</span> 
+        <div class="user-photo__item user-photo__item_panorama">
+          <a class="user-photo__link user-photo__link_panorama">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/panorama-desktop@1x.jpg">
+              <source media="(min-width:660px)" srcset="../img/panorama-tablet@1x.jpg">
+              <img class="user-photo__image user-photo__image_panorama" src="../img/panorama-mobile@1x.jpg" alt="Фотография пользователя">
+            </picture>
+          </a>
+          <div class="user-photo__wrapper wrapper">
+            <div class="user-photo__comment user-photo__comment_panorama">
+              <span class="user-photo__author user-photo__author_panorama">Анна</span>
+              <span class="user-photo__upload-time user-photo__upload-time_panorama">(5 минут назад)</span>
+              <span class="user-photo__text user-photo__text_panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</span>
+              <span class="user-photo__likes user-photo__likes_panorama">нравится: 215</span> 
+            </div>
           </div>
         </div>
-        <div class="photo-post__wrapper">
-          <div class="user-photo__post">  
-            <div class="user-photo__item">
-              <img src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя">
-            </div>
+        <div class="user-photo__wrapper wrapper">
+          <div class="user-photo__item">  
+            <a class="user-photo__link">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-car-desktop@1x.jpg">
+                <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg">
+                <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя">
+              </picture>
+            </a>
             <div class="user-photo__comment">
-              <h2 class="user-photo__user-name">Левон</h2>
-              <span class="user-photo__upload-time">(5 часов назад)</span>
+              <div class="user-photo__inner">
+                <span class="user-photo__author">Левон</span>
+                <span class="user-photo__upload-time">(5 часов назад)</span>
+              </div>
               <span class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</span>
               <span class="user-photo__likes">нравится: 356</span> 
             </div>
           </div>
-          <div class="user-photo__post"> 
-            <div class="user-photo__item">
-              <img src="img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя">
-            </div>
+          <div class="user-photo__item"> 
+            <a class="user-photo__link">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                <source media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя">
+              </picture>
+            </a>
             <div class="user-photo__comment">
-              <h2 class="user-photo__user-name">Антон</h2>
-              <span class="user-photo__upload-time">(12 часов назад)</span>
+              <div class="user-photo__inner">
+                <span class="user-photo__author">Антон</span>
+                <span class="user-photo__upload-time">(12 часов назад)</span>
+              </div>
               <span class="user-photo__text">Соседи будут рады!</span>
               <span class="user-photo__likes">нравится: 666</span> 
             </div>
           </div>
-          <div class="user-photo__post"> 
-            <div class="user-photo__item">
-              <img src="img/photo-window-mobile@1x.jpg" alt="Фотография пользователя">
-            </div>
+          <div class="user-photo__item"> 
+            <a class="user-photo__link">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-window-desktop@1x.jpg">
+                <source media="(min-width:660px)" srcset="img/photo-window-tablet@1x.jpg">
+                <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg" alt="Фотография пользователя">
+              </picture>
+            </a>
             <div class="user-photo__comment">
-              <h2 class="user-photo__user-name">Борис</h2>
-              <span class="user-photo__upload-time">(20 часов назад)</span>
-              <span class="user-photo__text">Здесь могла быть ваша цитата о вечном.</span>
+              <div class="user-photo__inner">
+                <span class="user-photo__author">Борис</span>
+                <span class="user-photo__upload-time">(20 часов назад)</span>
+              </div>
+              <span class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</span>
               <span class="user-photo__likes">нравится: 215</span> 
             </div>
           </div>
-          <div class="user-photo__post"> 
-            <div class="user-photo__item">
-              <img src="img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя">
-            </div>
+          <div class="user-photo__item"> 
+            <a class="user-photo__link">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-fair-desktop@1x.jpg">
+                <source media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя">
+              </picture>
+            </a>
             <div class="user-photo__comment">
-              <h2 class="user-photo__user-name">Сергей</h2>
-              <span class="user-photo__upload-time">(25 часов назад)</span>
+              <div class="user-photo__inner">
+                <span class="user-photo__author">Сергей</span>
+                <span class="user-photo__upload-time">(25 часов назад)</span>
+              </div>
               <span class="user-photo__text">Самая кубанская в мире!</span>
               <span class="user-photo__likes">нравится: 4</span> 
             </div>
           </div>
-          <div class="user-photo__post">
-            <div class="user-photo__item">
-              <img src="img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя">
-            </div>
+          <div class="user-photo__item">
+            <a class="user-photo__link">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-pov-desktop@1x.jpg">
+                <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя">
+              </picture>
+            </a>
             <div class="user-photo__comment">
-              <h2 class="user-photo__user-name">Максим</h2>
-              <span class="user-photo__upload-time">(40 часов назад)</span>
+              <div class="user-photo__inner">
+                <span class="user-photo__author">Максим</span>
+                <span class="user-photo__upload-time">(40 часов назад)</span>
+              </div>
               <span class="user-photo__text">Где снег-то?</span>
               <span class="user-photo__likes">нравится: 150</span> 
             </div>
           </div>
-          <div class="user-photo__post">
-            <div class="user-photo__item">
-              <img src="img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя">
-            </div>
+          <div class="user-photo__item">
+            <a class="user-photo__link">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-wing-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+                <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя">
+              </picture>
+            </a>
             <div class="user-photo__comment">
-              <h2 class="user-photo__user-name">Надежда</h2>
-              <span class="user-photo__upload-time">(45 часов назад)</span>
+              <div class="user-photo__inner">
+                <span class="user-photo__author">Надежда</span>
+                <span class="user-photo__upload-time">(45 часов назад)</span>
+              </div>
               <span class="user-photo__text">Всем GM и взаимные лайки!</span>
               <span class="user-photo__likes">нравится: 2560</span> 
             </div>
           </div>
-          <section class="intro">
-            <span class="intro__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</span>
-          </section>
         </div>
-      </div>
-      <h1 class="visually-hidden">Добавьте свою фотографию</h1>
-      <div class="photo-post__wrapper">
-        <form class="edit-photo" method="get" action="https://echo.htmlacademy.ru">
-          <img class="edit-photo__preview" src="img/photo-road-mobile@1x.jpg">
-          <div class="edit-photo__controls">
-            <button class="edit-photo__size" type="button"><img class="edit_photo__icon" src="img/icon-editor-crop.svg"></button>
-            <button class="edi-photo__contrast" type="button"><img class="edit_photo__icon" src="img/icon-editor-contrast.svg"></button>
-            <button class="edit-photo__bright" type="button"><img class="edit_photo__icon" src="img/icon-editor-fill.svg"></button>
-            <div class="edit-photo__range_size">
-              <div class="edit-photo__range edit-photo__range_scale"></div>
-              <div class="edit-photo__range edit-photo__range_toggle"></div>
+      </section>
+      <section class="edit-photo">
+        <div class="edit-photo__wrapper">
+          <span class="edit-photo__text">Затмите их всех!<br></span>
+          <span class="edit-photo__text edit-photo__text_desktop"> Выкладывайте все, что накопилось в телефоне!</span>
+        </div>
+        <h1 class="visually-hidden">Добавьте свою фотографию</h1>
+        <form class="edit-photo__form" method="get" action="https://echo.htmlacademy.ru">
+          <div class="edit-photo__container wrapper">
+            <div class="edit-photo__image">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-road-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+                <img class="edit-photo__preview" src="img/photo-road-mobile@1x.jpg">
+              </picture>
             </div>
-            <div class="edit-photo__range_contrast">
-              <div class="edit-photo__range edit-photo__range_scale"></div>
-              <div class="edit-photo__range edit-photo__range_toggle"></div>
+            <div class="edit-photo__editor">
+              <div class="edit-photo__controls">
+                <button class="edit-photo__toggle  edit-photo__toggle_crop" type="button">
+                  <span class="visually-hidden">Обрезка изображения</span>
+                  <img class="edit-photo__icon  edit-photo__icon_crop  edit-photo__icon_active" href="img/icon-editor-crop.svg" width="48" height="48">
+                </button>
+                <input class="edit-photo__range" type="range" name="crop">
+                <button class="edit-photo__toggle  edit-photo__toggle_fill" type="button">
+                  <span class="visually-hidden">Яркость</span>
+                  <img class="edit-photo__icon  edit-photo__icon_crop  edit-photo__icon_active" href="img/icon-editor-crop.svg" width="48" height="48">
+                </button>
+                <input class="edit-photo__range" type="range" name="fill">
+                <button class="edit-photo__toggle  edit__toggle_contrast" type="button">
+                  <span class="visually-hidden">Контрастность</span>
+                  <img class="edit-photo__icon  edit-photo__icon_contrast" href="img/icon-editor-contrast.svg" width="31.92" height="31.92">
+                </button>
+                <input class="edit-photo__range" type="range" name="contrast">
+              </div>
+              <input class="edit-photo__range  edit-photo__range_mobile" type="range" name="range-mobile">
+              <button class="edit-photo__btn  edit-photo__btn_post" type="submit">Запостить</button>
+              <button class="edit-photo__btn  edit-photo__btn_cancel" type="reset">Отмена</button>
             </div>
-            <div class="edit-photo__range_bright">
-              <div class="edit-photo__range edit-photo__range_scale"></div>
-              <div class="edit-photo__range edit-photo__range_toggle"></div>
-            </div>
-            <button type="submit" class="edit-photo__post">Запостить</button>
-            <button type="reset" class="edit-photo__cancel">Отмена</button>
           </div>
         </form>
       </div>
@@ -168,7 +223,7 @@
         <img class="main-footer__icon main-footer__icon_mobile" src="img/logo-pink-blue-mobile.svg" alt="Приложение Пинк">
         <img class="main-footer__icon main-footer__icon_desktop" src="img/logo-pink-blue-desktop.svg" alt="Приложение Пинк">
       </a>
-      <h1 class="visually-hidden">Присоединяйтесь к нам в соцсетях<h1>
+      <h1 class="visually-hidden">Присоединяйтесь к нам в соцсетях</h1>
       <div class="main-footer__social-list">
         <a class="main-footer__social-item">
           <span class="visually-hidden">Twitter</span>
@@ -178,11 +233,11 @@
           <span class="visually-hidden">Facebook</span>
           <img class="main-footer__facebook" src="img/icon-facebook.svg">
         </a>  
-        <a class="main-footer__social_item">
+        <a class="main-footer__social-item">
           <span class="visually-hidden">YouTube</span> 
           <img class="main-footer__youtube" src="img/icon-youtube.svg">
         </a>      
-      </ul>
+      </div>
       <div class="main-footer__produced">
         <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="main-footer__text">Разработано</span>
@@ -190,5 +245,6 @@
           <img class="main-footer__academy-logo" src="img/logo-htmlacademy.svg" alt="Сайт разработчика - ХТМЛ Академии">
         </a>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
