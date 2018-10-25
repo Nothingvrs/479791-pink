@@ -6,19 +6,19 @@
       content="width=device-width,initial-scale=1"> 
     <link rel="stylesheet" type="text/css" href="css/style.css" >
     <meta charset="utf-8">
-    <title></title>
+    <title>Взгляните на жизнь иначе! Приложение Pink</title>
   </head>
   <body>
     <header class="main-header">
       <section class="main-header__menu main-header__menu_opened main-header__menu_nojs">
         <div class="main-header__wrapper"> 
-          <h1 class="visually-hidden">Приложение Пинк</h1>
-          <div class="main-header__head-menu">  
-            <a href="/index.html">
-              <img class="main-header__logo-image main-header__logo-image_mobile" src="img/logo-pink-white-mobile.svg"  alt="Приложение Пинк">
-              <img class="main-header__logo-image main-header__logo-image_tablet" src="img/logo-pink-white-tablet.svg"  alt="Приложение Пинк">
-              <img class="main-header__logo-image main-header__logo-image_desktop" src="img/logo-pink-white-desktop.svg"  alt="Приложение Пинк">
-            </a>
+          <h1 class="visually-hidden">Приложение Pink</h1>
+          <div class="main-header__head-menu main-header__head-menu_index">  
+            <picture>
+              <source media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+            </picture>
             <button type="button" class="main-nav__menu-btn">
                 <img class="main-header__menu-btn_opened" src="img/icon-menu-cross.svg" alt="Кнопка меню">
                 <img class="main-header__menu-btn_closed" src="img/icon-menu-burger.svg" alt="Кнопка меню">
@@ -89,6 +89,7 @@
             <p class="advantages__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="advantages__link" href="#">Узнать больше об исследовании</a>
           </div>
+        </div>
       </section>
       <section class="reviews">
         <div class="wrapper">
@@ -241,13 +242,14 @@
           <span class="visually-hidden">YouTube</span> 
           <img class="main-footer__youtube" src="img/icon-youtube.svg">
         </a>      
-      </ul>
+      </div>
       <div class="main-footer__produced">
         <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="main-footer__text">Разработано</span>
           <span class="visually-hidden">HTML Академией</span>
           <img class="main-footer__academy-logo" src="img/logo-htmlacademy.svg" alt="Сайт разработчика - ХТМЛ Академии">
         </a>
+      </div>
     </footer>
   	<script src="js/menu.js"></script>
   </body>

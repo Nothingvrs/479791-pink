@@ -6,7 +6,7 @@
       content="width=device-width,initial-scale=1"> 
     <link rel="stylesheet" type="text/css" href="css/style.css" >
     <meta charset="utf-8">
-    <title></title>
+    <title>Фотографии пользователей</title>
   </head>
   <body>
     <header class="main-header">
@@ -14,10 +14,12 @@
         <div class="main-header__wrapper"> 
           <h1 class="visually-hidden">Приложение Пинк</h1>
           <div class="main-header__head-menu">  
-            <a href="/index.html">
-              <img class="main-header__logo-image main-header__logo-image_mobile" src="img/logo-pink-white-mobile.svg"  alt="Приложение Пинк">
-              <img class="main-header__logo-image main-header__logo-image_tablet" src="img/logo-pink-white-tablet.svg"  alt="Приложение Пинк">
-              <img class="main-header__logo-image main-header__logo-image_desktop" src="img/logo-pink-white-desktop.svg"  alt="Приложение Пинк">
+            <a href="index.html">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+              </picture>
             </a>
             <button type="button" class="main-nav__menu-btn">
                 <img class="main-header__menu-btn_opened" src="img/icon-menu-cross.svg" alt="Кнопка меню">
@@ -196,17 +198,17 @@
               <div class="edit-photo__controls">
                 <button class="edit-photo__toggle  edit-photo__toggle_crop" type="button">
                   <span class="visually-hidden">Обрезка изображения</span>
-                  <img class="edit-photo__icon  edit-photo__icon_crop  edit-photo__icon_active" href="img/icon-editor-crop.svg" width="48" height="48">
+                  <img class="edit-photo__icon  edit-photo__icon_crop  edit-photo__icon_active" src="img/icon-editor-crop.svg" width="48" height="48">
                 </button>
                 <input class="edit-photo__range" type="range" name="crop">
                 <button class="edit-photo__toggle  edit-photo__toggle_fill" type="button">
                   <span class="visually-hidden">Яркость</span>
-                  <img class="edit-photo__icon  edit-photo__icon_crop  edit-photo__icon_active" href="img/icon-editor-crop.svg" width="48" height="48">
+                  <img class="edit-photo__icon  edit-photo__icon_fill  edit-photo__icon_active" src="img/icon-editor-fill.svg" width="48" height="48">
                 </button>
                 <input class="edit-photo__range" type="range" name="fill">
                 <button class="edit-photo__toggle  edit__toggle_contrast" type="button">
                   <span class="visually-hidden">Контрастность</span>
-                  <img class="edit-photo__icon  edit-photo__icon_contrast" href="img/icon-editor-contrast.svg" width="31.92" height="31.92">
+                  <img class="edit-photo__icon  edit-photo__icon_contrast" src="img/icon-editor-contrast.svg" width="32" height="32">
                 </button>
                 <input class="edit-photo__range" type="range" name="contrast">
               </div>
@@ -216,7 +218,7 @@
             </div>
           </div>
         </form>
-      </div>
+      </section>
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo" href="index.html">
@@ -244,6 +246,7 @@
           <span class="visually-hidden">HTML Академией</span>
           <img class="main-footer__academy-logo" src="img/logo-htmlacademy.svg" alt="Сайт разработчика - ХТМЛ Академии">
         </a>
+      </div>
     </footer>
     <script src="js/menu.js"></script>
   </body>

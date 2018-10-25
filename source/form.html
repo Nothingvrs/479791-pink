@@ -6,7 +6,7 @@
       content="width=device-width,initial-scale=1"> 
     <link rel="stylesheet" type="text/css" href="css/style.css" >
     <meta charset="utf-8">
-    <title></title>
+    <title>Конкурс на самое безбашенное путешествие с Пинк</title>
   </head>
   <body>
     <header class="main-header">
@@ -15,9 +15,11 @@
           <h1 class="visually-hidden">Приложение Пинк</h1>
           <div class="main-header__head-menu">  
             <a href="/index.html">
-              <img class="main-header__logo-image main-header__logo-image_mobile" src="img/logo-pink-white-mobile.svg"  alt="Приложение Пинк">
-              <img class="main-header__logo-image main-header__logo-image_tablet" src="img/logo-pink-white-tablet.svg"  alt="Приложение Пинк">
-              <img class="main-header__logo-image main-header__logo-image_desktop" src="img/logo-pink-white-desktop.svg"  alt="Приложение Пинк">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg"alt="Логотип Пинк">
+              </picture>
             </a>
             <button type="button" class="main-nav__menu-btn">
                 <img class="main-header__menu-btn_opened" src="img/icon-menu-cross.svg" alt="Кнопка меню">
@@ -61,15 +63,15 @@
           <div class="wrapper">
             <div class="competition-form__field competition-form__field_names">
               <label for="surname" class="competition-form__title competition-form__title_name">Фамилия:</label> 
-              <input type="text" name="surname" class="competition-form__text-field" placeholder="Укажите фамилию&nbsp;*"> 
+              <input type="text" id="surname" class="competition-form__text-field" required placeholder="Укажите фамилию&nbsp;*"> 
             </div>
             <div class="competition-form__field competition-form__field_names">
               <label for="name" class="competition-form__title competition-form__title_name">Имя:</label>
-              <input type="text" name="name" class="competition-form__text-field" placeholder="Введите ваше имя&nbsp;*">
+              <input type="text" id="name" class="competition-form__text-field" required placeholder="Введите ваше имя&nbsp;*">
             </div>
             <div class="competition-form__field competition-form__field_names">
               <label for="patronymic" class="competition-form__title competition-form__title_name">Отчество:</label>
-              <input type="text" name="patronymic" class="competition-form__text-field" placeholder="Ну и отчество тоже">
+              <input type="text" name="id" class="competition-form__text-field" placeholder="Ну и отчество тоже">
             </div>
           </div>
         </section>
@@ -106,11 +108,11 @@
           <span class="competition-form__title competition-form__title_hidden">Контактная информация</span><div class="wrapper wrapper_form-desktop">            
             <div class="competition-form__field competition-form__field_phone">
               <label for="phone" class="competition-form__title competition-form__title_contacts ">Номер телефона</label>
-              <input type="tel" name="phone" class="competition-form__text-field" placeholder="Номер, пожалуйста">
+              <input type="tel" id="phone" class="competition-form__text-field" placeholder="Номер, пожалуйста">
             </div>
             <div class="competition-form__field competition-form__field_mail">
               <label for="mail" class="competition-form__title competition-form__title_contacts">Адрес почты</label>
-              <input type="email" name="mail" class="competition-form__text-field" placeholder="Введите почту&nbsp;*">
+              <input type="email" id="mail" class="competition-form__text-field" required placeholder="Введите почту&nbsp;*">
             </div>  
           </div>
         </section>
@@ -167,6 +169,7 @@
           <span class="visually-hidden">HTML Академией</span>
           <img class="main-footer__academy-logo" src="img/logo-htmlacademy.svg" alt="Сайт разработчика - ХТМЛ Академии">
         </a>
+      </div>
     </footer>
     <script src="js/menu.js"></script>
   </body>
