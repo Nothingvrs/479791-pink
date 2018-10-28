@@ -17,6 +17,10 @@ var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
 
+// Start
+
+gulp.task("start", gulp.series("css", "server"));
+
 // CSS
 
 gulp.task("style", function() {
@@ -137,3 +141,4 @@ gulp.task("serve", function() {
   gulp.watch("*.html", ["html"]).on("change", server.reload);
   gulp.watch("js/*.js", ["js"]).on("change", server.reload);
 });
+
