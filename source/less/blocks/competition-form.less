@@ -31,6 +31,62 @@
     margin-left: 22px;
 } 
 
+.competition-form__item input[type="text"]:hover {
+      border: 2px solid @color-second;
+}
+
+.competition-form__item input[type="text"]:focus {
+      border: 2px solid @color-main;
+      outline: none;
+}
+
+.competition-form__item input[type="text"]:active {
+      border: 2px solid @color-main;
+      outline: none;
+}
+
+.competition-form__item input[type="tel"]:hover {
+      border: 2px solid @color-second;
+}
+
+.competition-form__item input[type="tel"]:focus {
+      border: 2px solid @color-main;
+      outline: none;
+}
+
+.competition-form__item input[type="tel"]:active {
+      border: 2px solid @color-main;
+      outline: none;
+}
+
+.competition-form__item input[type="email"]:hover {
+      border: 2px solid @color-second;
+}
+
+.competition-form__item input[type="email"]:focus {
+      border: 2px solid @color-main;
+      outline: none;
+}
+
+.competition-form__item input[type="email"]:active {
+      border: 2px solid @color-main;
+      outline: none;
+}
+
+.competition-form__item textarea:hover {
+      border: 2px solid @color-second;
+}
+
+.competition-form__item textarea:focus {
+      border: 2px solid @color-main;
+      outline: none;
+}
+
+.competition-form__item textarea:active {
+      border: 2px solid @color-main;
+      outline: none;
+}
+
 .competition-form__item_checkbox {
     padding-top: 39px;
     padding-bottom: 2px;
@@ -260,6 +316,19 @@ input[type="radio"]:checked:disabled + .competition-form__radio {
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 34px;
+}
+
+.btn_disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
+
+.competition-form__btn:hover {
+  background-color: #1c9b5e;
+}
+
+.competition-form__btn:active {
+  color: #7abc98;
 }
 
 @media (min-width: @tablet) {
@@ -558,7 +627,7 @@ input[type="radio"]:checked:disabled + .competition-form__radio {
     }
 
     .competition-form__item_names input[type="text"] {
-        margin-bottom: 55px;
+        margin-bottom: 53px;
     }
 
     .competition-form__item_names .wrapper {

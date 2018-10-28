@@ -34,13 +34,57 @@
   color: @text-color-second;
 }
 
+.main-image__button:hover {
+  color: @color-main;
+  background-color: @bg-color-main; 
+}
+
+.main-image__button:active {
+  color: @color-main;
+  background-color: @bg-color-main;
+  color: #f1becc; 
+}
+
 .main-image__download {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  margin-top: 36px;
+  margin-top: 32px;
   width: 240px;
+}
+
+.main-image__apple {
+  display: block;
+  width: 55px;
+  height: 60px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  background-image: url("../img/logo-apple.svg");
+  background-position: 50% -30%;
+}
+
+.main-image__android {
+  display: block;
+  width: 55px;
+  height: 60px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  background-image: url("../img/logo-android.svg");
+  background-position: 40% 60%;
+}
+
+.main-image__windows {
+  display: block;
+  width: 55px;
+  height: 60px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  background-image: url("../img/logo-microsoft.svg");
+  background-position: 50% 65%;
 }
 
 .main-image__wrapper {
@@ -159,8 +203,20 @@
   }
 
   .main-image__download {
-    margin-top: 49px;
-    margin-bottom: 32px;
+    margin-top: 44px;
+    margin-bottom: 34px;
+  }
+
+  .main-image__android {
+    background-position: 50% 50%;
+  }
+
+  .main-image__apple {
+    background-position: 40% 0%;
+  }
+
+  .main-image__windows {
+    background-position: 40% 80%;
   }
 }
 
@@ -218,9 +274,21 @@
 
   .main-image__download {
     margin: 0;
-    margin-left: 30px;
-    margin-bottom: 51px;
-    margin-top: 70px;
+    margin-left: 33px;
+    margin-bottom: 50px;
+    margin-top: 67px;
+  }
+
+  .main-image__android {
+    background-position: 20% 70%;
+  }
+
+  .main-image__apple {
+    background-position: 10% 40%;
+  }
+
+  .main-image__windows {
+    background-position: 30% 70%;
   }
 
   .main-image__title {

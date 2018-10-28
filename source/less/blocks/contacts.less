@@ -46,6 +46,16 @@
   margin-left: 5px;
 }
 
+.contacts__item_email .contacts__type:hover {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.contacts__item_email .contacts__type:active {
+  color: rgba(0,0,0,0.3);
+  border: none;
+}
+
 .contacts__item_adress .contacts__text {
   margin-bottom: 4px;
 }
@@ -95,6 +105,11 @@
     position: absolute;    
 }
 
+.contacts__map-yandex {
+  width: 320px;
+  height: 200px
+}
+
 
 @media (min-width: @tablet) {
   .contacts__title {
@@ -102,6 +117,11 @@
     font-size: 40px;
     line-height: 48px;
     margin: 0 auto;
+  }
+
+  .contacts__map-yandex {
+    width: 660px;
+    height: 400px;
   }
 
   .contacts__list {
@@ -186,7 +206,7 @@
   }
 
   .contacts__item_adress {
-    padding-left: 19px;
+    padding-left: 17px;
     padding-top: 2px;
   }
 
@@ -227,5 +247,9 @@
   .contacts__info {
     min-height: 270px;
   }
-  
+
+  .contacts__map-yandex {
+    width: 1200px;
+    height: 520px;
+  }
 }
