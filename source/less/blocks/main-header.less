@@ -10,6 +10,7 @@
   width: 80px;
   height: 25px;
   outline: none;
+  padding-left: 10px;
 }
 
 .main-header__logo-image:hover {
@@ -29,14 +30,6 @@
   fill: @bg-color-main;
 }
 
-.main-header__logo-image_tablet {
-    display: none;
-}
-
-.main-header__logo-image_desktop {
-    display: none;
-}
-
 .main-header__menu_opened {
     background-color: @color-second;
 }
@@ -45,19 +38,19 @@
   fill: @text-color-second;
 }
 
-.main-nav__menu-btn:hover .main-header__menu-btn_opened {
+.main-header__menu-btn_opened:hover {
   fill: @color-main;
 }
 
-.main-nav__menu-btn:active .main-header__menu-btn_opened {
+.main-header__menu-btn_opened:active {
   fill: rgba(210,40,86, 0.3);
 }
 
-.main-nav__menu-btn:hover .main-header__menu-btn_closed {
+.main-header__menu-btn_closed:hover {
   fill: @color-main;
 }
 
-.main-nav__menu-btn:active .main-header__menu-btn_closed {
+.main-header__menu-btn_closed:active {
   fill: rgba(210,40,86, 0.3);
 }
 
@@ -111,25 +104,18 @@
     margin-bottom: -160px;
   }
 
-  .main-header__logo-image_tablet {
-    display: block;
-  }
-
-  .main-header__logo-image_mobile {
-    display: none;
-  }
-
   .main-header__head-menu {
     box-sizing: border-box;
     padding: 22px 9px;
+    padding-left: 20px;
     min-height: 110px;
   }
 
-  .main-header__logo {
-    display: block;
-    margin-top: 4px;
-    margin-left: 10.5px;
-    width: 150px;
+  .main-header__logo-image {
+    width: 200px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 2px;
   }
 }
 
@@ -164,8 +150,11 @@
     padding-right: 78px;
   }
 
-  .main-header__logo {
+  .main-header__logo-image {
     margin: 0px;
+    padding: 0px;
+    width: 200px;
+    height: 50px;
   }
 
   .main-header__head-menu_index .main-header__logo {
