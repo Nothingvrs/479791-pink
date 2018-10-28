@@ -65,6 +65,10 @@
   margin-bottom: 15px;
 }
 
+.advantages__item_around-world {
+    margin-bottom: 16px;
+} 
+
 
 @media (min-width: @tablet) {
   .advantages {
@@ -141,8 +145,13 @@
     line-height: 36px;
     font-weight: 700;
     width: 180px;
-    margin-top: 18px;
+    margin-top: 17px;
     margin-bottom: 8px;
+  }
+
+  .advantages__link {
+    color: @color-main;
+    border-bottom: 1px solid @color-main;
   }
 
   .advantages__description {
@@ -169,6 +178,10 @@
     background-position: 50% 75%, 50% 50%;
     background-repeat: no-repeat, no-repeat;
     background-size: 202px auto, 238px auto;
+  }
+
+  .advantages__24hours {
+    display: block;
   }
 
 }
@@ -292,5 +305,7 @@
     line-height: 30px;
   }
 
-
+  .advantages__24hours {
+    display: inline-block;
+  }
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" >
     <meta charset="utf-8">
     <title>Конкурс на самое безбашенное путешествие с Пинк</title>
+    <script src="js/svgxuse.js" defer></script>
   </head>
   <body>
     <header class="main-header">
@@ -15,15 +16,25 @@
           <h1 class="visually-hidden">Приложение Пинк</h1>
           <div class="main-header__head-menu">  
             <a href="/index.html">
-              <picture>
-                <source media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg"alt="Логотип Пинк">
-              </picture>
+              <div class="main-header__logo">  
+                <svg class="main-header__logo-image  main-header__logo-image_mobile" width="74.426" height="22.859">
+                  <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+                </svg>
+                <svg class="main-header__logo-image main-header__logo-image_tablet" width="146.3" height="40.375">
+                  <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+                </svg>
+                <svg class="main-header__logo-image main-header__logo-image_desktop" width="146.3" height="40.375">
+                  <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+                </svg>
+              </div>
             </a>
             <button type="button" class="main-nav__menu-btn">
-                <img class="main-header__menu-btn_opened" src="img/icon-menu-cross.svg" alt="Кнопка меню">
-                <img class="main-header__menu-btn_closed" src="img/icon-menu-burger.svg" alt="Кнопка меню">
+                <svg class="main-header__menu-btn_opened" width="23" height="23">
+                  <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+                </svg>
+                <svg class="main-header__menu-btn_closed" width="23" height="23">
+                  <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+                </svg>
             </button>
           </div>  
           <nav class="main-nav main-nav_opened main-nav_nojs">
@@ -35,7 +46,7 @@
                 <a class="main-nav__link" href="photo.html">Фотографии</a>
               </li>
               <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link_line" href="form.html">Конкурс</a>
+              <a class="main-nav__link main-nav__link_curent" href="form.html">Конкурс</a>
               </li>
               <li class="main-nav__item">
               <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a> 
@@ -145,29 +156,41 @@
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo" href="index.html">
-        <img class="main-footer__icon main-footer__icon_mobile" src="img/logo-pink-blue-mobile.svg" alt="Приложение Пинк">
-        <img class="main-footer__icon main-footer__icon_desktop" src="img/logo-pink-blue-desktop.svg" alt="Приложение Пинк">
+        <svg class="main-footer__icon main-footer__icon_mobile" width="146.3" height="40.375">
+          <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+        </svg>
+        <svg class="main-footer__icon main-footer__icon_desktop" width="146.3" height="40.375">
+          <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+        </svg>
       </a>
       <h1 class="visually-hidden">Присоединяйтесь к нам в соцсетях</h1>
       <div class="main-footer__social-list">
         <a class="main-footer__social-item">
           <span class="visually-hidden">Twitter</span>
-          <img class="main-footer__twitter" src="img/icon-twitter.svg">
+          <svg class="main-footer__social-icon" width="17.5" height="14.663">
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          </svg>
         </a>  
         <a class="main-footer__social-item">
           <span class="visually-hidden">Facebook</span>
-          <img class="main-footer__facebook" src="img/icon-facebook.svg">
+          <svg class="main-footer__social-icon" width="8.673" height="18.944">
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
         </a>  
         <a class="main-footer__social-item">
           <span class="visually-hidden">YouTube</span> 
-          <img class="main-footer__youtube" src="img/icon-youtube.svg">
+          <svg class="main-footer__social-icon" width="14.64" height="13.96">
+            <use xlink:href="img/sprite.svg#icon-youtube"></use>
+          </svg>
         </a>      
       </div>
       <div class="main-footer__produced">
         <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="main-footer__text">Разработано</span>
           <span class="visually-hidden">HTML Академией</span>
-          <img class="main-footer__academy-logo" src="img/logo-htmlacademy.svg" alt="Сайт разработчика - ХТМЛ Академии">
+          <svg class="main-footer__academy-logo" width="26.943" height="34.09">
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </footer>

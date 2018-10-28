@@ -13,7 +13,7 @@
 .main-footer__social-list {
   display: flex;
   justify-content: center;
-  margin-top: 38px;
+  margin-top: 26px;
   margin-left: 11px;
 }
 
@@ -28,8 +28,53 @@
   border-radius: 50%;
 }
 
+.main-footer__social-icon {
+  fill: @color-main;
+}
+
+.main-footer__social-item:hover {
+    border: 3px solid @color-second;
+    outline: none;
+}
+
+.main-footer__social-item:focus {
+    border: 3px solid @color-second;
+    outline: none;
+}
+
+.main-footer__social-item:active {
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    outline: none;
+}
+
+.main-footer__social-item:active .main-footer__social-icon {
+    opacity: 0.3;
+    outline: none;
+}
+
 .main-footer__icon_desktop {
   display:none;
+}
+
+.main-footer__logo:hover .main-footer__icon {
+  fill: @color-main;  
+}
+
+.main-footer__logo:active .main-footer__icon {
+  opacity: 0.3;
+  fill: #283645;  
+}
+
+.main-footer__academy-logo {
+  fill: @color-main;
+}
+
+.main-footer__academy-logo:hover {
+  fill: @color-second;
+}
+
+.main-footer__academy-logo:active {
+  opacity: 0.3;
 }
 
 .main-footer__produced {
@@ -78,7 +123,7 @@
   }
 
   .main-footer__logo {
-    margin-top: 25px;
+    margin-top: 35px;
     margin-left: 1px;
     margin-bottom: 0px;
   }
