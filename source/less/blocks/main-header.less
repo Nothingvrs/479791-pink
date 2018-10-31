@@ -5,6 +5,18 @@
   color: @text-color-second;
 }
 
+.main-header__menu-btn {
+  margin-left: auto;
+  display: block;
+  width: 38px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  z-index: 5;
+  cursor: pointer;
+}
+
 .main-header__logo-image {
   display: block;
   width: 80px;
@@ -14,16 +26,16 @@
 }
 
 .main-header__logo-image:hover {
-    fill: @color-main;
+  fill: @color-main;
 }
 
 .main-header__logo-image:focus {
-    fill: @color-main;
+  fill: @color-main;
 }
 
 .main-header__logo-image:active {
-    fill: @bg-color-main;
-    opacity: 0.3;
+  fill: @bg-color-main;
+  opacity: 0.3;
 }
 
 .main-header__logo-image {
@@ -31,7 +43,7 @@
 }
 
 .main-header__menu_opened {
-    background-color: @color-second;
+  background-color: @color-second;
 }
 
 .main-header__menu-btn_opened {
@@ -54,8 +66,13 @@
   fill: rgba(210,40,86, 0.3);
 }
 
+.main-header__menu-btn_closed {
+  fill: #ffffff;
+}
+
 .main-header__menu_closed {
-    background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-right: 20px;
 }
 
 .main-header__head-menu {
@@ -95,9 +112,27 @@
   display: block;
 }
 
+.main-header__logo-svg_mobile {
+  display: block;
+  width: 55px;
+  height: 25px;
+}
+
+.main-header__logo-svg_tablet { 
+  display: none; 
+} 
+
+.main-header__logo-svg_desktop { 
+  display: none; 
+} 
+
 @media (min-width: @tablet) {
   .main-header__menu {
     margin-bottom: -160px;
+  }
+
+   .main-header__menu-btn {
+    margin-top: 20px;
   }
 
   .main-header__head-menu {
@@ -114,6 +149,14 @@
     margin-left: 0px;
     padding-left: 0px;
   }
+
+  .main-header__logo-svg_tablet { 
+    display: block; 
+  } 
+
+  .main-header__logo-svg_mobile {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -127,6 +170,10 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px auto;
     }
+  }
+
+  .main-header__menu-btn {
+    display: none;
   }
 
   .main-header__head-menu {
@@ -157,4 +204,12 @@
   .main-header__head-menu_index .main-header__logo {
     margin-left: 2px;
   }
+
+  .main-header__logo-svg_desktop { 
+    display: block; 
+  }     
+
+  .main-header__logo-svg_tablet {
+    display: none;
+  }   
 }

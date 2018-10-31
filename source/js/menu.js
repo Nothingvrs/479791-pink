@@ -1,6 +1,6 @@
 var navMain = document.querySelector(".main-nav");
 var menuMain = document.querySelector(".main-header__menu");
-var navbtn = document.querySelector(".main-nav__menu-btn");
+var navbtn = document.querySelector(".main-header__menu-btn");
 
 navMain.classList.remove("main-nav_nojs");
 
