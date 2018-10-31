@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+.main-header__menu_nojs .main-header__menu-btn {
+  display: none;
+}
+
 .main-header__logo-image {
   display: block;
   width: 80px;
@@ -112,6 +116,11 @@
   display: block;
 }
 
+.main-header__menu_nojs {
+  padding-right: 0px;
+  background-color: @color-second; 
+}
+
 .main-header__logo-svg_mobile {
   display: block;
   width: 55px;
@@ -179,6 +188,10 @@
   .main-header__head-menu {
     min-height: 48px;
     padding: 27px 0;
+  }
+
+  .main-header__menu_closed {
+    padding-right: 0px;
   }
 
   .main-header__menu {

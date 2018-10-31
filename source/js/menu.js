@@ -2,7 +2,7 @@ var navMain = document.querySelector(".main-nav");
 var menuMain = document.querySelector(".main-header__menu");
 var navbtn = document.querySelector(".main-header__menu-btn");
 
-navMain.classList.remove("main-nav_nojs");
+menuMain.classList.remove("main-header__menu_nojs");
 
 navbtn.addEventListener("click", function() {
 if (navMain.classList.contains("main-nav_closed")) {
