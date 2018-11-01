@@ -25,7 +25,6 @@
   display: block;
   width: 80px;
   height: 25px;
-  outline: none;
   padding-left: 10px;
 }
 
@@ -76,7 +75,6 @@
 
 .main-header__menu_closed {
   background-color: rgba(0, 0, 0, 0.3);
-  padding-right: 20px;
 }
 
 .main-header__head-menu {
@@ -112,13 +110,22 @@
   display: block;
 }
 
+.main-header__menu_closed .main-header__menu-btn {
+  padding: 0;
+  margin-right: 20px;
+}
+
 .main-header__menu_closed .main-nav {
-  display: block;
+  display: none;
 }
 
 .main-header__menu_nojs {
   padding-right: 0px;
   background-color: @color-second; 
+}
+
+.main-header__menu_nojs .main-nav {
+  display: block;
 }
 
 .main-header__logo-svg_mobile {
@@ -192,6 +199,10 @@
 
   .main-header__menu_closed {
     padding-right: 0px;
+  }
+
+  .main-header__menu .main-nav {
+    display: block;
   }
 
   .main-header__menu {
